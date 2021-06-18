@@ -1,0 +1,115 @@
+body {
+    font-family: sans-serif;
+    background-color: #424630;
+}
+
+* {
+    box-sizing: border-box;
+}
+h1 {
+    color: #eee;
+    margin-bottom: 30px;
+    font-family: 'Luminari';
+}
+
+/* SPINNER */
+#spinner{
+    visibility: hidden;
+    width: 80px;
+    height: 80px;
+  
+    border: 2px solid #f3f3f3;
+    border-top:3px solid #f25a41;
+    border-radius: 100%;
+  
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right: 0;
+    margin: auto;
+  
+    animation: spin 1s infinite linear;
+  }
+  
+  @keyframes spin {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+  }
+  
+  #spinner.show {
+    visibility: visible;
+  }
+
+
+/* CARDS */
+.container {
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+#cardList {
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+}
+
+
+.card {
+    list-style-type: none;
+    background-color: #000000;
+    color: #eee;
+    border-radius: 3px;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-areas:
+        'name image'
+        'house image';
+    text-align: left;
+}
+
+.card > h2 {
+    margin-bottom: 5px;
+    font-family: 'Luminari';
+}
+
+.card > p {
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Century Gothic';
+}
+
+.card > img {
+    max-height: 150px;
+    margin-left: 20px;
+    grid-area: image;
+}
+
+/* SEARCH BAR */
+#searchBar {
+    width: 100%;
+    height: 32px;
+    border-radius: 3px;
+    border: 1px solid #eaeaea;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+#searchWrapper {
+    position: relative;
+}
+
+#searchWrapper::after {
+    content: '🔍';
+    position: absolute;
+    top: 7px;
+    right: 15px;
+}
+
