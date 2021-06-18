@@ -16,10 +16,11 @@ If you would like to view code alongside the web page you may open up the projec
 <br>
 NodeJS is required as well as asynchronous functions were used when creating this project. <br>
 If you do not have this already installed...<br>
- - Go to https://nodejs.org/en/ <br>
- - Download NodeJS and follow installation instructions for your OS <br>
+ - Go to https://nodejs.org/en/
+ - Download NodeJS and follow installation instructions for your OS
 
 <br>
+
  ## Notes
  I changed the orientation/design of the card to what I believed was more visually appealing and added extra design elements. <br>
 <br>
