@@ -1,5 +1,5 @@
 # ElderCards
-Highspot Coding Exercise: A simple web application that accesses the Elder Cards API and presents the information in a virtual card form. <br>
+A simple web application that accesses the Elder Cards API and presents the information in a virtual card form. <br>
 ## Given Information
 API: https://api.elderscrollslegends.io/v1/cards <br>
 Documentation:https://docs.elderscrollslegends.io <br>
